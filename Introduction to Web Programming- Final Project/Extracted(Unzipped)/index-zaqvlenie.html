@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заявление</title>
+	<meta name="Reneta Boneva" content="Request">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style-zaqvlenie.css">
+</head>
+<body>
+<div id="wrapper1">
+	<div id="bg1">
+		<br>
+	</div>
+
+	<div id="wrapper2">
+		<header  id="main-nav">
+			<nav>
+			<div id="laptopNav">
+			<div id="nav1">
+			<ul >
+				<li>
+					<img src="wood2.png" alt="">
+					<a href="index.html"><strong> Начало </strong><span>--</span></a>
+				</li>
+				<li>
+					<img src="wood2.png" alt="">
+					<a href="index-pravilnik.html" ><strong> Правилник </strong></a>
+				</li>
+				<li>
+					<img src="wood2.png" alt="">
+					<a href="index-programa.html"><strong> Програма</strong><span>-</span></a>
+				</li>
+			</ul>
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="logo.png" alt="logo"></a>
+			</div>
+			<div id="nav2">
+			<ul>
+				<li>
+					<img src="wood2.png" alt="">
+					<a href="index-zaqvlenie.html"><strong> Заявление </strong></a>
+				</li>
+				<li>
+					<img src="wood2.png" alt="">
+					<a href="index-snimki.html"><strong><span>.</span> Снимки </strong></a>
+				</li>
+				<li>
+					<img src="wood2.png" alt="">
+					<a href="index-contacts.html"><strong><span>.</span> Контакти </strong></a>
+				</li>
+			</ul>
+			</div>
+			</div>
+
+			<div id="responsive-nav">
+				<a href="index.html" id="logoPic"><img src="logo.png" alt="" ></a>
+				<div id="dropdown">	
+					<button id="hambuurgerMenu">≡</button>				
+					<div id="dropdown-content">
+						<ul>
+							<li>
+								<a href="index.html"><strong>Начало</strong> </a>
+							</li>
+							<li>
+								<a href="index-pravilnik.html" ><strong>Правилник</strong></a>
+								
+							</li>
+							<li>
+								<a href="index-programa.html"><strong>Програма</strong></a>
+							</li>
+							<li>
+								<a href="index-zaqvlenie.html"><strong>Заявление</strong></a>
+								
+							</li>
+							<li>
+								<a href="index-snimki.html"><strong>Снимки</strong></a>
+							</li>
+							<li>
+								<a href="index-contacts.html"><strong>Контакти</strong></a>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</nav>
+		</header>
+		<main id="main-content">
+		<section>
+
+			<!-- Responsive get a picture for background -->
+			<img src="jeravna1.png" alt="" id="headerImg">
+			<h1><strong>ЗАЯВЛЕНИЕ</strong></h1>
+			<article>
+				<p>
+					Заявки за участие се приемат в срок до <b><em>30.06.2021г</em></b>. <br>
+					Заявките ще бъдат разгледани до 10.07.2021г. и одобрените участници ще бъдат уведомени по телефона.<br>
+					Одобрените занаятчии заплащат такса в размер на 50 лв., за сергия до 2 кв.м. общо за трите фестивални дни, като в нея е включен безплатен пропуск за един човек.<br>
+					Всички одобрени за участие клубове и танцови състави, заплащат входна такса в размер на 15 лв./на човек/ общо за трите фестивални дни.<br>
+				</p>
+				<p>
+					<span class="note"><b>*</b></span>Одобрените <b>САМО</b> ще получат обаждане по телефона за потвърждение на участието.
+				</p>
+			</article>
+
+			<article>
+				<div class="dropdown">
+					<button class="dropbtn">
+						<strong>Заявка за участие за занаятчии</strong><br>
+						<span class="arrow">&#10606;</span><br>
+					</button>
+					<div class="dropdown-content">
+
+						<form action="bravo.html" method="POST">
+
+							<div class="col1">
+							<label for="email">Email<span class="note"><b>*</b></span>:</label><br>
+							<input type="text" name="email" id="email" placeholder="mail@abv.bg" required><br>
+
+							<label for="password">Парола<span class="note"><b>*</b></span>:</label><br>
+							<input type="password" name="password" id="password" placeholder="Вашата парола..." required><br>
+
+							<label for="name">Име:</label><br>
+							<input type="text" name="name" id="name" placeholder="Лилия Семизова"><br>
+							
+							<label for="phoneNumber">Телефон<span class="note"><b>*</b></span>:</label><br>			
+							<input type="text" name="phoneNumber" id="phoneNumber" placeholder="0856565656" required><br>
+
+							<label for="time">Час:</label><br>
+							<input type="time" name="time1" id="time">
+
+							</div>
+							<div class="col2">
+							<label for="city">Област, град/село:</label><br>							
+							<input type="text" name="city" id="city" placeholder="Бургас"><br>
+							
+							
+							<label for="work">Занаят<span class="note"><b>*</b></span>:</label><br>
+							<input type="text" name="work" id="work" placeholder="Вашият занаят..." required><br>
+							
+							<label for="date">Дата:</label><br>
+							<input type="date" name="date" id="date" max="2022-08-21" min="2022-08-19"><br>
+
+							<label for="description">Описание на представяния занаят<span class="note"><b>*</b></span>:</label><br>
+							<textarea name="description" id="description" rows="6" cols="35" placeholder="Описание на представяния занаят..." required></textarea><br>
+							</div>
+
+							<input type="submit" name="send" id="send" value="Изпрати" onclick="return Validation()">
+						</form>
+
+						<hr>
+						<p><span class="note"><b>*</b></span> Задължителни полета</p>
+						<p class="nv">.</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="dropdown">
+					<button class="dropbtn">
+						<strong>Заявка за клубове и танцови състави</strong><br>
+						<span>&#10606;</span><br>
+					</button>
+					<div class="dropdown-content">
+
+						
+						<form action="bravo.html" method="POST">
+							<div class="col1">
+							<label for="email1">Email<span class="note"><b>*</b></span>:</label><br>
+							<input type="text" name="email1" id="email1" placeholder="mail@abv.bg" required><br>
+
+							<label for="password1"> Парола<span class="note"><b>*</b></span>:</label><br>
+							<input type="password" name="password1" id="password1" placeholder="Вашата парола..." required><br>
+
+							<label for="name1">Име на клуба/танцовия състав<span class="note"><b>*</b></span>:</label><br>
+							<input type="text" name="name" id="name1" placeholder="Атанас Манчев" required><br>
+							
+							<label for="phoneNumber1">Телефон<span class="note"><b>*</b></span>:</label><br>
+							<input type="text" name="phoneNumber" id="phoneNumber1" placeholder="0856565656"><br>
+
+
+							<label for="time1">Час:</label><br>
+							<input type="time" name="time1" id="time1">
+							</div>
+							
+							<!-- Responsive get together col1 and col2 -->
+							<div class="col2">
+							<label for="city1">Област, град/село:</label>
+							<br>
+							<input type="text" name="city" id="city1" placeholder="гр. Бургас"><br>
+							
+							<label for="owner1">Ръководител<span class="note"><b>*</b></span>:</label>
+							<br>
+							<input type="text" name="owner" id="owner1" placeholder="Димитър Тонев" required><br>
+							
+							<label for="date1">Дата:</label><br>
+							<input type="date" name="date" id="date1" max="2022-08-21" min="2022-08-19"><br>
+
+							<label for="description1">От колко човека се състои съставът?<span class="note"><b>*</b></span>:</label>
+							<br>
+							<textarea name="description" id="description1" rows="7" cols="42" placeholder="Брой на участниците..."></textarea><br>
+							</div>
+
+							<input type="submit" name="send" id="send2" value="Изпрати" onclick="return Validation1()">
+						</form>
+						<hr>
+						<p><span class="note"><b>*</b></span> Задължителни полета</p>
+						<p class="nv">.</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		</main>
+	</div>
+	
+	<div id="bg2">	
+		<br>
+	</div>
+</div>
+
+
+<footer id="footer">
+	<p><strong>COPYRIGHT 2018 ЖЕРАВНА. ВСИЧКИ ПРАВА ЗАПАЗЕНИ. ИЗРАБОТКА ОТ РЕНЕТА БОНЕВА</strong></p>
+</footer>
+
+<script>
+	function Validation(){
+		var password = document.getElementById('password').value;
+		var phoneNumber = document.getElementById('phoneNumber').value;
+		var email = document.getElementById('email').value;
+		if (email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+			alert('Невалиден имейл!');
+			return false;
+		}
+		if (!password.match(/[0-9]/g)) {
+			alert('Паролата трябва да съдържа поне едно число!');
+			return false;
+		}
+		if (!password.match(/[A-Z]/g)) {
+			alert('Паролата трябва да съдържа поне една главна буква!');
+			return false;
+		}
+		if (phoneNumber.length != 10) {
+			alert('Невалиден телефонен номер!');
+			return false;
+		}
+		
+	}
+	function Validation1(){
+		var password = document.getElementById('password1').value;
+		var phoneNumber = document.getElementById('phoneNumber1').value;
+		var email = document.getElementById('email1').value;
+		
+		if (email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+			alert('Невалиден имейл!');
+			return false;
+		}
+		if (!password.match(/[0-9]/g)) {
+			alert('Паролата трябва да съдържа поне едно число!');
+			return false;
+		}
+		if (!password.match(/[A-Z]/g)) {
+			alert('Паролата трябва да съдържа поне една главна буква!');
+			return false;
+		}
+		if (phoneNumber.length != 10) {
+			alert('Невалиден телефонен номер!');
+			return false;
+		}
+	}
+</script>
+</body>
+</html>

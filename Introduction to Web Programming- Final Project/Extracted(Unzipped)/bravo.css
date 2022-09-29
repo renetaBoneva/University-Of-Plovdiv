@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+body{
+	background: -webkit-linear-gradient(90deg, red, orange, white 10%, white 50%, white 89%,  lightgreen, rgb(87, 234, 123), rgb(7, 124, 228)); 
+	background: -o-linear-gradient(90deg, red, orange, white 10%, white 50%, white 89%,  lightgreen, rgb(87, 234, 123), rgb(7, 124, 228)); 
+	background: -moz-linear-gradient(90deg, red, orange, white 10%, white 50%, white 89%,  lightgreen, rgb(87, 234, 123), rgb(7, 124, 228));
+	background: linear-gradient(90deg, red, orange, white 10%, white 50%, white 89%,  lightgreen, rgb(87, 234, 123), rgb(7, 124, 228));
+}
+#wrapper1{
+	background: #FFF;
+	width: 1020px;
+	margin: 0 auto;
+}
+#bg1, #bg2{
+	width: 150px;
+}
+#bg1, #bg2 , #wrapper2{
+	display: inline-block;
+	vertical-align: top;
+}
+#bg1{
+	margin-left: 0;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	background: url(shevica.png) repeat-y;
+	background-size: 100%; 
+	padding-bottom: 650px;
+}
+#bg2{
+	margin-right: 0;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	background: url(shevica1.png) repeat-y;
+	background-size: 100%;
+	padding-bottom: 650px;
+}
+#bg1 img, #bg2 img{
+	width: 100%;
+}
+
+
+#wrapper2{
+	text-align: center;
+	width: 700px;
+	position: relative;
+}
+#wrapper2 div{
+	vertical-align: middle;
+}
+#coin{
+	width: 20%;
+	margin: 1em 0;
+}
+#bravo{
+	font-size: 25px;
+	padding-top: 30%;
+}
+#shevica3, #shevica4{
+	display: none;
+}
+
+
+footer{
+	vertical-align: bottom;
+	background: url(footer.png) no-repeat; 
+	background-size: 100%;
+}
+footer p{
+	text-align: center;
+	text-shadow: 2px 2px 3px #FFF;
+	padding-top: 7em; 
+	padding-bottom: 3em;
+	vertical-align: bottom;
+}
+
+@media (max-width: 1023px){
+	#bg1, #bg2{
+		display: none;
+	}
+	#wrapper1{
+		width: 700px;
+	}
+	#shevica3, #shevica4{
+		display: block;
+		width: 700px;
+	}
+	#bravo{
+		padding-top: 0;
+	}
+	#text{
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+}
+
+@media (max-width: 767px){
+	#wrapper1, main, nav{
+		width: 479px;
+	}
+	#wrapper2{
+		width: 479px;
+	}
+	footer p{
+	padding-top: 5em; 
+	padding-bottom: 5em;
+	}
+	#shevica3, #shevica4{
+		display: block;
+		width: 479px;
+	}
+	#bravo{
+		padding-top: 0;
+	}
+	#text{
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+}
+
+@media (max-width: 479px){
+	#wrapper1, main, nav{
+		width: 300px;
+	}
+	#wrapper2{
+		width: 300px;
+	}
+	footer p{
+	padding-top: 10%; 
+	padding-bottom: 0%;
+	font-size: 15px;
+	margin-bottom: 0;
+	}	
+
+	#shevica3, #shevica4{
+		display: block;
+		width: 300px;
+	}
+	
+}
