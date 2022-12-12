@@ -41,29 +41,39 @@ namespace hw_ex5
     {
         static void Main(string[] args)
         {
-            int[] arr = { 2, 3, 1, 5, 6, 7, 9, 2, 5, 3, 9 };
-            int L=0;
-            int R=10;
-            arrayBounds(arr, L, R);
+            int[] arr1 = { 2, 3, 1, 5, 6, 7, 9, 2, 5, 3, 9 };
+            int L = 0;
+            int R = 10;
+            //arrayBounds(arr1, L, R);
+
+            int[] exampleArr = { -3, 0, 11, 14, -1, 10, 9 };
+            isLengthMoreThan2(exampleArr);
+
+            int[] input = { -3, -5, 20, 40 };
+            isOddOrEven(input);
+
+            int length = 4;
+            int[] arr = new int[length];
+            Console.WriteLine(arrayBounds(arr, -65, 55));
         }
 
         static int[] arrayBounds(int[] arr, int L, int R)
         {
             if (R < L + 8)
             {
-                for(int i=0; i < arr.Length -1; i++)
+                for (int i = 0; i < arr.Length; i++)
                 {
                     Random newNumber = new Random();
                     arr[i] = newNumber.Next(1, 18);
                 }
-            } 
-            else if(R > L + 7)
+            }
+            else if (R > L + 7)
             {
-                for (int i = 0; i < arr.Length - 1; i++)
+                for (int i = 2; i < arr.Length; i++)
                 {
                     Random newNumber = new Random();
                     int rndNum = newNumber.Next(L, R - 1);
-                    while(rndNum % 7 != 0)
+                    while (rndNum % 7 != 0)
                     {
                         newNumber = new Random();
                         rndNum = newNumber.Next(L, R - 1);
@@ -71,7 +81,41 @@ namespace hw_ex5
                     arr[i] = rndNum;
                 }
             }
+            Console.WriteLine("here");
             return arr;
+        }
+
+        static int isLengthMoreThan2(int[] arr){
+            if(arr.Length < 2)
+            {
+                return 0;
+            }
+            else
+            {
+                int minDiff = 2147483640;
+                for(int i = arr.Length - 2; i > 0; i--)
+                {
+                    int currentDiff = arr[i + 1] - arr[i];
+                    if(currentDiff < minDiff)
+                    {
+                        minDiff = currentDiff;
+                    }
+                }
+                return minDiff;
+            }
+        }
+
+        static void isOddOrEven(int[] arr)
+        {
+            for(int i = 1; i < arr.Length - 1; i++)
+            {
+                if (( Math.Abs(arr[i - 1] % 2) == 1 && arr[i - 1] < 0) &&
+                        (Math.Abs(arr[i + 1] % 2) == 0 && arr[i + 1] > 0))
+                {
+                    Console.WriteLine($"Текущ елемент: {arr[i]} с индекс {i}");
+                }
+            }
+
         }
     }
 }
