@@ -1,4 +1,4 @@
-GO
+﻿GO
 USE REAL_ESTATES;
  
 INSERT INTO appointments (client_id, agent_id, appointment_date, appointment_description, appointment_status)
