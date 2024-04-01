@@ -70,7 +70,7 @@ CREATE TABLE appointments
 	trainer_id INT NOT NULL,
 	appointent_time DATETIME NOT NULL,
 	isValidAppointment BIT DEFAULT 1,
-	-- NULL-> didnt happened, 0-> happened, 1-> up comming
+	-- NULL-> didn't happened, 0-> happened, 1-> upcomming
 	
 	CONSTRAINT pk_appointments PRIMARY KEY (client_id, appointent_time),
 	CONSTRAINT fk_appointments_workouts FOREIGN KEY (workout_id) REFERENCES workouts(workout_id),
